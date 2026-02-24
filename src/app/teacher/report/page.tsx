@@ -347,6 +347,9 @@ export default function TeacherReportPage() {
                             <span className="text-gray-400">
                               {obs.writerRole === "teacher" ? "교사" : "또래"}
                             </span>
+                            <span className="text-[10px] text-gray-300 ml-auto">
+                              {obs.createdAt.toLocaleDateString("ko-KR")}
+                            </span>
                           </div>
                           <p className="text-gray-600 line-clamp-2">
                             {obs.content}
